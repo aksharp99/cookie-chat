@@ -14,7 +14,9 @@ $scope.getMessages();
   //pass that text to the postMessage method on the messageService object which will then post it to the backend.
 
 $scope.postMessage = function(yourMessage) {
+
   messageService.postMessage(yourMessage)
+  $scope.message = '';
 
   }
 

@@ -19,7 +19,7 @@ this.postMessage = function(yourMessage) {
   return $http({
     method: 'POST',
     url: 'http://practiceapi.devmounta.in/api/chats',
-    message: yourMessage
+    data: {message:yourMessage}
   })
 }
 
